@@ -1,0 +1,7 @@
+@custom-media --small-viewport (max-width: 30em);
+
+:matches(.a, .b):not(.modify, .state) :any-link {
+  @media (--small-viewport) {
+    color: red
+  }
+}
