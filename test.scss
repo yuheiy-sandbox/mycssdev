@@ -1,10 +1,9 @@
 $color-red: red;
-
-@custom-media --small-viewport (max-width: 30em);
+$breakpoint-sm: 30em;
 
 :matches(.a, .b):not(.modify, .state) :any-link {
-  @media (--small-viewport) {
-    color: $color-red
+  @media (min-width: $breakpoint-sm) {
+    color: $color-red    
   }
 }
 

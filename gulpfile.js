@@ -7,7 +7,6 @@ const css = () => {
   return gulp.src('test.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([
-      require('postcss-custom-media'),
       require('postcss-pseudo-class-any-link'),
       require('postcss-selector-matches'),
       require('postcss-selector-not'),

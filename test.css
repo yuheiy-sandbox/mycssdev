@@ -1,4 +1,4 @@
-@media (max-width: 30em) {
+@media (min-width: 30em) {
   .a:not(.modify):not(.state) :link, .b:not(.modify):not(.state) :link, .a:not(.modify):not(.state) :visited, .b:not(.modify):not(.state) :visited {
     color: red; } }
 
